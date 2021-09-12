@@ -1,0 +1,9 @@
+label{
+    color: white;
+}
+.form{
+    left: 50%;
+}
+.uk-container>:last-child{
+    margin-bottom: 35%;
+}

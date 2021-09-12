@@ -36,7 +36,7 @@ article.post div.post-reacciones ul.post-icons{
 
 article.post div.post-reacciones div.post-pie{
     padding-left: 20px;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid rgb(214, 105, 16);
 }
 article.post div.post-reacciones div.post-pie h5{
     margin: 0;
@@ -59,9 +59,10 @@ article.post div.post-comentarios ul li{
     display: flex;
 }
 article.post div.post-comentarios ul li a{
-    color: black;
+   
     font-weight: bolder;
     text-decoration: none;
+    cursor: pointer;
 }
 article.post div.post-comentarios ul li p{
     margin: 0 5px;

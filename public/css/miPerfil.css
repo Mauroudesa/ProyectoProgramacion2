@@ -16,3 +16,10 @@
     color: gray;
     text-decoration: none;
 }
+.ul-container .uk-container-small{
+    background-color: white;
+}
+main li{
+    color: white;
+
+}

@@ -15,23 +15,24 @@ header section nav{
 }
 header nav ul li a,
 header a{
-    color: white;
+    color: white !important;
 }
-header nav ul li a:hover,
+header nav ul li a,
 header a:hover{
-    color: lightsteelblue;
-    text-decoration: none;
+    color: rgb(214, 112, 16);
 }
 .logo{
     margin: 0px;
 }
 .logo a{
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Alumni Sans', sans-serif,bold;
+    font-size: 135%;
     color: white;
+    font-weight: bolder;
 }
 .logo a:hover {
     text-decoration: none;
-    color: white;
+    color: white ;
 }
 header ul{
     margin: 0;
@@ -50,5 +51,5 @@ header div.uk-navbar-center ul li:nth-last-child(1){
     border-right: none;
 }
 header nav form input, header nav form ::placeholder, header nav form span{
-    color: white !important;
+    color: rgb(68, 62, 62) !important;
 }
