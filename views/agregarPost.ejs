@@ -2,17 +2,30 @@
 <html lang="en">
 
 <%- include('./partials/head') %>
+<head>
+<link rel="stylesheet" href="/css/agregarPost.css">
+</head>
 <body>
+    <%- include('./partials/headerLogueado') %>
     <main>
+        <div class= "encierroForm">
         <div class="uk-section uk-section-small">
             <div class="uk-container uk-container-large uk-flex">
-                <form action="">
-                    <h2>(Formulario para agregar un post)</h2>
+                <form action="POST">
+                    <div class="mb-3">
+                        <label for="formFileMultiple" class="form-label">Elegi tu foto!</label>
+                        <input class="form-control" type="file" id="formFileMultiple" multiple>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Que estas pensando?</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
 
                 </form>
 
             </div>
         </div>
+    </div>
     </main>
     
     <%- include('./partials/footer') %>
