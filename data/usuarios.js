@@ -76,3 +76,5 @@ const usuariosData = {
     ],
             };
             module.exports = usuariosData;
+
+
