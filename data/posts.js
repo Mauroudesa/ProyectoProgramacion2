@@ -50,7 +50,7 @@ let posts = {
     },
     {
         id:5,
-        imagen:"/images/z3nftdas.jpg",
+        imagen:"/images/znftdas.jpg",
         createdAt:"18 de Mayo",
         likes:800,
         CryptoAcepted:"BTC",
@@ -62,7 +62,7 @@ let posts = {
     },
     {
         id:6,
-        imagen:"/images/z3nftete.jpg",
+        imagen:"/images/znftete.jpg",
         createdAt:"28 de junio",
         likes:857,
         CryptoAcepted:"ETH",
@@ -74,7 +74,7 @@ let posts = {
     },
     {
         id:7,
-        imagen:"/images/znftm.jps",
+        imagen:"/images/imagen-nft2.jpg",
         createdAt:"15 de enero",
         likes:48,
         CryptoAcepted:"BNB",
@@ -86,7 +86,7 @@ let posts = {
     },
     {
         id:8,
-        imagen:"/images/znftw.webp",
+        imagen:"/images/imagen-nft1.jpg",
         createdAt:"18 de Febrero",
         likes:5,
         CryptoAcepted:"ETH",
