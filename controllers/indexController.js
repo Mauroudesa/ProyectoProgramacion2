@@ -5,7 +5,6 @@ const controllers = {
         res.render('index', {posts: posts.lista})        
         }
     
-
 }
 
 module.exports = controllers;

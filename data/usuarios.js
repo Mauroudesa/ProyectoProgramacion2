@@ -2,78 +2,69 @@ const usuariosData = {
     lista: [
             {
                 id: 1,
-                nombreUsario:'Alan',
-                imgPerfil: "/images/z3nft.webp",
+                nombreUsario:'Afdslan',
+                imgPerfil: "/images/perfil1.jpg",
                 
             },
             {
                 id: 2,
-                nombreUsario:'Facundo',
-                imgPerfil: "/images/z3nft.webp",
+                nombreUsario:'Facundyhtyhto',
+                imgPerfil: "/images/perfil2.jpg",
                 
             },
             {
                 id: 3,
-                nombreUsario:'Mauro',
-                imgPerfil: "/images/z3nft.webp",
+                nombreUsario:'Magrturo',
+                imgPerfil: "/images/perfil3.jpg",
                 
             },
             {
                 id: 4,
-                nombreUsario:'Alan',
-                imgPerfil: "/images/z3nft.webp",
+                nombreUsario:'Aldean',
+                imgPerfil: "/images/perfil4.jpg",
                 
             },
             {
                 id: 5,
-                nombreUsario:'Alan',
-                imgPerfil:"/images/z3nft.webp" ,
+                nombreUsario:'Alayyyn',
+                imgPerfil:"/images/perfil5.jpg" ,
                 
             },
             {
                 id: 6,
-                nombreUsario:'Alan',
-                imgPerfil: "/images/z3nft.webp",
+                nombreUsario:'Alanjjj',
+                imgPerfil: "/images/perfil6.jpg",
                 
             },
             {
                 id: 7,
-                nombreUsario:'Alan',
-                imgPerfil: "/images/z3nft.webp",
+                nombreUsario:'Alahhhn',
+                imgPerfil: "/images/perfil7.jpg",
                 
             },
             {
                 id: 8,
-                nombreUsario:'Alan',
-                imgPerfil: "/images/z3nft.webp",
+                nombreUsario:'Alaggn',
+                imgPerfil: "/images/perfil8.jpg",
                 
             },
             {
                 id: 9,
-                nombreUsario:'Alan',
-                imgPerfil: "/images/z3nft.webp",
+                nombreUsario:'Alanrffe',
+                imgPerfil: "/images/perfil9.jpg",
                 
-            },
-            {
-                id: 10,
-                nombreUsario:'Alan',
-                imgPerfil: "/images/z3nft.webp",
-                
-            },
-            {
-                id: 11,
-                nombreUsario:'Alan',
-                imgPerfil: "/images/z3nft.webp",
-                
-            },
-            {
-                id: 12,
-                nombreUsario:'Alan',
-                imgPerfil: "/images/z3nft.webp",
-                
-            },
+            }, 
+            
 
     ],
+    findUsername: function (id) { //! va a recorrer todo el posteo y me va a devolver el parametro que yo halla seleccionado como ID
+        for (let i = 0; i < this.lista.length; i++) {
+            if (this.lista[i].id == id) {
+                return this.lista[i]
+            }
+        }
+        
+    },
             };
             module.exports = usuariosData;
 

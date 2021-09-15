@@ -57,7 +57,7 @@ article.detalle-post .imagen-post{
 .comentarios-detalle .lista-comentarios .comentario h6 a{
     font-weight: bolder;
     font-size: 15px;
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     margin-right: 4px !important;
 }

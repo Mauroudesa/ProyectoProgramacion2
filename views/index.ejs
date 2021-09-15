@@ -16,12 +16,12 @@
                             <div>
                                 <img src="" alt=""> 
                             </div>
-                            <h4><a href="/users/detalleUsuario">Usuario</a></h4>
+                            <h4><a href="/users/detalleUsuario/<%= post.user.id %>">Usuario</a></h4>
                         
                         </div>
                       
                         <div class="post-body uk-flex uk-flex-center">
-                            <a href="/posteo/detallePost">
+                            <a href="/posteo/<%= post.id %>">
                                 <img src="<%= post.imagen %>" alt="">
                             </a>
                         </div>
@@ -33,7 +33,7 @@
                                 </li>
                             </ul>
                             <div class="post-pie uk-flex">
-                                <h5 class="uk-width-1-6"><a href="/users/detalleUsuario">Usuario</a></h5>
+                                <h5 class="uk-width-1-6"><a href="/users/<%= post.user.nombreUsario %>">Usuario</a></h5>
                                 <p class="uk-width-5-6">Pie de post</p>
                             </div>
                         </div>
@@ -42,11 +42,11 @@
                             <ul>
                                 <li>
                                     <a href="/users/detalleUsuario">Usuario</a>
-                                    <p>Comentario</p>
+                                    <p><%= post.comentarios.contenido %></p>
                                 </li>
                                 <li>
                                     <a href="/users/detalleUsuario">Usuario</a>
-                                    <p>Comentario</p>
+                                    <p><%= post.comentarios.contenido %></p>
                                 </li>
                                 <a href="">Ver más...</a>
                             </ul>
