@@ -2,55 +2,55 @@ const usuariosData = {
     lista: [
             {
                 id: 1,
-                nombreUsario:'Afdslan',
+                nombreUsuario:'Afdslan',
                 imgPerfil: "/images/perfil1.jpg",
                 
             },
             {
                 id: 2,
-                nombreUsario:'Facundyhtyhto',
+                nombreUsuario:'Facundyhtyhto',
                 imgPerfil: "/images/perfil2.jpg",
                 
             },
             {
                 id: 3,
-                nombreUsario:'Magrturo',
+                nombreUsuario:'Magrturo',
                 imgPerfil: "/images/perfil3.jpg",
                 
             },
             {
                 id: 4,
-                nombreUsario:'Aldean',
+                nombreUsuario:'Aldean',
                 imgPerfil: "/images/perfil4.jpg",
                 
             },
             {
                 id: 5,
-                nombreUsario:'Alayyyn',
+                nombreUsuario:'Alayyyn',
                 imgPerfil:"/images/perfil5.jpg" ,
                 
             },
             {
                 id: 6,
-                nombreUsario:'Alanjjj',
+                nombreUsuario:'TheCryptoMan',
                 imgPerfil: "/images/perfil6.jpg",
                 
             },
             {
                 id: 7,
-                nombreUsario:'Alahhhn',
+                nombreUsuario:'ToTheMoon',
                 imgPerfil: "/images/perfil7.jpg",
                 
             },
             {
                 id: 8,
-                nombreUsario:'Alaggn',
+                nombreUsuario:'BullMarket',
                 imgPerfil: "/images/perfil8.jpg",
                 
             },
             {
                 id: 9,
-                nombreUsario:'Alanrffe',
+                nombreUsuario:'DoGeMoon',
                 imgPerfil: "/images/perfil9.jpg",
                 
             }, 
@@ -65,6 +65,13 @@ const usuariosData = {
         }
         
     },
+    findByUsername: function (username) {
+        for (let index = 0; index < usuariosData.lista.length; index++) {
+            if (usuariosData.lista[index].nombreUsuario == username) {
+                return usuariosData.lista[index];
+            }
+        }
+    }
             };
             module.exports = usuariosData;
 

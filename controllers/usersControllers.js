@@ -20,7 +20,7 @@ detalleUsuario:function (req,res) {
     const posts = postModule.findByUser(user.id);
 
     res.render('detalleUsuario', {user, posts})
- 
-}
+},
+
 }
 module.exports = userControllers;

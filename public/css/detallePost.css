@@ -29,7 +29,7 @@ article.detalle-post .imagen-post{
 .comentarios-detalle .lista-comentarios{
     height: 75%;
     padding-left: 5px;
-    border-bottom: 1px solid lightgray;
+
     overflow: scroll;
 }
 .comentarios-detalle .lista-comentarios::-webkit-scrollbar{
@@ -60,6 +60,16 @@ article.detalle-post .imagen-post{
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin-right: 4px !important;
+}
+h6{
+    color:white
+}
+.comentarios-detalle h6{
+    margin-left: 34%;
+    margin-top: 7%;
+}
+.uk-input{
+    margin-bottom: 10%;
 }
 
 
