@@ -2,11 +2,11 @@ section.detalle-container{
     border: 1px solid lightgray;
 }
 article.detalle-post{
-    /* border-right: 1px solid lightgray; */
+     border-right: 1px solid lightgray; 
 }
 
 article.detalle-post .imagen-post{
-
+    width: 150px; 
 }
 
 .comentarios-detalle{
@@ -72,5 +72,8 @@ h6{
     margin-bottom: 10%;
 }
 
+.imagenId{
+width: 150px;
 
+}
 

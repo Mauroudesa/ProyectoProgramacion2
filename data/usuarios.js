@@ -2,7 +2,7 @@ const usuariosData = {
     lista: [
             {
                 id: 1,
-                nombreUsuario:'Afdslan',
+                nombreUsuario:'Mauro',
                 imgPerfil: "/images/perfil1.jpg",
                 
             },

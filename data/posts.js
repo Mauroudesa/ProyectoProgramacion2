@@ -9,7 +9,7 @@ let posts = {
         CryptoAcepted:"SOL",
         price:3,
         user_id: 1,
-        user: {id: 1, username: 'Afdslan', },
+        user: {id: 1, username: 'Afdslan',  imgPerfil: "/images/perfil1.jpg", },
         comentarios: comments.findByPost(1),
     },
     {
@@ -20,7 +20,7 @@ let posts = {
         CryptoAcepted:"BTC",
         price:1,
         user_id: 2,
-        user: {id: 2, username: 'Facundyhtyhto', },
+        user: {id: 2, username: 'Facundyhtyhto',imgPerfil: "/images/perfil2.jpg" },
         comentarios: comments.findByPost(2),
     },
     {
@@ -31,7 +31,7 @@ let posts = {
         CryptoAcepted:"BNB",
         price:10,
         user_id: 3,
-        user: {id: 3, username: 'Magrturo', },
+        user: {id: 3, username: 'Magrturo', imgPerfil: "/images/perfil3.jpg"},
         comentarios: comments.findByPost(3),
     },
     {
@@ -42,7 +42,7 @@ let posts = {
         CryptoAcepted:"ETH",
         price:5,
         user_id: 4,
-        user: {id: 4, username: 'Aldean', },
+        user: {id: 4, username: 'Aldean',imgPerfil: "/images/perfil4.jpg" },
         comentarios: comments.findByPost(3),
     },
     
@@ -54,7 +54,7 @@ let posts = {
         CryptoAcepted:"BTC",
         price:2,
         user_id: 5,
-        user: {id: 5, username: 'TheCryptoMan', },
+        user: {id: 5, username: 'TheCryptoMan',imgPerfil: "/images/perfil5.jpg" },
         comentarios: comments.findByPost(4),
     },
     {
@@ -65,7 +65,7 @@ let posts = {
         CryptoAcepted:"ETH",
         price:3,
         user_id: 6,
-        user: {id: 6, username: 'name', },
+        user: {id: 6, username: 'name',imgPerfil: "/images/perfil6.jpg" },
         comentarios: comments.findByPost(5),
     },
     {
@@ -76,7 +76,7 @@ let posts = {
         CryptoAcepted:"BNB",
         price:8,
         user_id: 7,
-        user: {id: 7, username: 'ToTheMoon', },
+        user: {id: 7, username: 'ToTheMoon',imgPerfil: "/images/perfil7.jpg" },
         comentarios: comments.findByPost(6),
     },
     {
@@ -87,7 +87,7 @@ let posts = {
         CryptoAcepted:"ETH",
         price:1,
         user_id: 8,
-        user: {id: 8, username: 'BullMarket', },
+        user: {id: 8, username: 'BullMarket',imgPerfil: "/images/perfil8.jpg" },
         comentarios: comments.findByPost(7),
     },
     {
@@ -98,7 +98,7 @@ let posts = {
         CryptoAcepted:"BTC",
         price:2,
         user_id: 9,
-        user: {id: 9, username: 'DoGeMoon', },
+        user: {id: 9, username: 'DoGeMoon', imgPerfil: "/images/perfil9.jpg"},
         comentarios: comments.findByPost(8),
     },
     {
@@ -109,7 +109,7 @@ let posts = {
         CryptoAcepted:"ETH",
         price:3,
         user_id: 1,
-        user: {id: 1, username: 'Afdslan', },
+        user: {id: 1, username: 'Afdslan',imgPerfil: "/images/perfil1.jpg" },
         comentarios: comments.findByPost(1),
     },
     {
@@ -120,7 +120,7 @@ let posts = {
         CryptoAcepted:"ETH",
         price:3,
         user_id: 1,
-        user: {id: 1, username: 'Afdslan', },
+        user: {id: 1, username: 'Afdslan',imgPerfil: "/images/perfil1.jpg" },
         comentarios: comments.findByPost(1),
     },
     {
@@ -131,7 +131,7 @@ let posts = {
         CryptoAcepted:"BTC",
         price:2,
         user_id: 9,
-        user: {id: 9, username: 'DoGeMoon', },
+        user: {id: 9, username: 'DoGeMoon',imgPerfil: "/images/perfil9.jpg" },
         comentarios: comments.findByPost(8),
     },
     {
@@ -142,7 +142,7 @@ let posts = {
         CryptoAcepted:"BTC",
         price:2,
         user_id: 9,
-        user: {id: 9, username: 'DoGeMoon', },
+        user: {id: 9, username: 'DoGeMoon',imgPerfil: "/images/perfil9.jpg" },
         comentarios: comments.findByPost(8),
     },
      {
@@ -153,7 +153,7 @@ let posts = {
         CryptoAcepted:"BTC",
         price:1,
         user_id: 2,
-        user: {id: 2, username: 'Facundyhtyhto', },
+        user: {id: 2, username: 'Facundyhtyhto',imgPerfil: "/images/perfil2.jpg" },
         comentarios: comments.findByPost(2),
     },
     {
@@ -164,7 +164,7 @@ let posts = {
         CryptoAcepted:"BTC",
         price:1,
         user_id: 2,
-        user: {id: 2, username: 'Facundyhtyhto', },
+        user: {id: 2, username: 'Facundyhtyhto', imgPerfil: "/images/perfil2.jpg"},
         comentarios: comments.findByPost(2),
     },
     {
@@ -175,7 +175,7 @@ let posts = {
         CryptoAcepted:"BTC",
         price:1,
         user_id: 2,
-        user: {id: 2, username: 'Facundyhtyhto', },
+        user: {id: 2, username: 'Facundyhtyhto',imgPerfil: "/images/perfil2.jpg" },
         comentarios: comments.findByPost(2),
     }
     ],
