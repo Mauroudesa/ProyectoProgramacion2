@@ -1,21 +1,24 @@
 section.detalle-container{
-    border: 1px solid lightgray;
+    box-shadow: 0px 0px 30px #000;
+    
 }
 article.detalle-post{
      border-right: 1px solid lightgray; 
+     
 }
 
 article.detalle-post .imagen-post{
-    width: 150px; 
+    width: 100%,
 }
 
 .comentarios-detalle{
     border-left: 1px solid lightgray;
+  
 }
 
 .comentarios-detalle .info-post{
-    height: 10%;
-    border-bottom: 1px solid lightgray;
+    height: 14%;
+    box-shadow: 0px 0px 3px #000;
     padding-left: 5px;
 }
 .comentarios-detalle .info-post img{
@@ -38,6 +41,7 @@ article.detalle-post .imagen-post{
 .comentarios-detalle .agregar-comentario{
     height: 15%;
     padding-left: 5px;
+    position: relative;
 }
 
 .comentarios-detalle .lista-comentarios{
@@ -67,13 +71,19 @@ h6{
 .comentarios-detalle h6{
     margin-left: 34%;
     margin-top: 7%;
+   
 }
 .uk-input{
-    margin-bottom: 10%;
+    width: 300px;
+position: absolute;
+    top: 0px;
+}
+.uk-button:not(:disabled) {
+    cursor: pointer;
+    position: absolute;
+    top: 36px;
+    left: 85px;
+    border-radius: 10px;
 }
 
-.imagenId{
-width: 150px;
-
-}
 

@@ -2,32 +2,41 @@ const usuariosData = {
     lista: [
             {
                 id: 1,
-                nombreUsuario:'Mauro',
-                imgPerfil: "/images/perfil1.jpg",
-                
+                nombreUsuario:'ylzclk',
+                imgPerfil: "/images/perfil11.jpg",
+                descripcion: 'Creadora de diseñador gráfico de 32 años: TheBirthOfArt / TheLifeOfArt en Opensea Turquía',
+                twitter: 'https://twitter.com/ylzkrtt',
             },
             {
                 id: 2,
-                nombreUsuario:'Facundyhtyhto',
-                imgPerfil: "/images/perfil2.jpg",
+                nombreUsuario:'numo',
+                imgPerfil: "/images/perfil15.jpg",
+                descripcion: 'Hola, aquí está Numo, un artista de píxeles entusiasta. Que hacen todo tipo de pixel art. También me encanta el desarrollo de juegos e indie. ¡No dude en ponerse en contacto conmigo!',
+                twitter: 'https://twitter.com/numo_0',
                 
             },
             {
                 id: 3,
-                nombreUsuario:'Magrturo',
-                imgPerfil: "/images/perfil3.jpg",
+                nombreUsuario:'SalvoIn3D',
+                imgPerfil: "/images/perfil12.png",
+                descripcion: 'Soy un artista 3D de 21 años. Cada pieza para mí es una experiencia que quiero que todos disfruten.', 
+                twitter: 'https://twitter.com/salvo3_d',
                 
             },
             {
                 id: 4,
-                nombreUsuario:'Aldean',
-                imgPerfil: "/images/perfil4.jpg",
+                nombreUsuario:'Fantarchi',
+                imgPerfil: "/images/perfil13.jpg",
+                descripcion: ' Mi nombre es Siebold Nijenhuis. Soy un arquitecto holandés. Soy arquitecto independiente desde hace más de 20 años y siempre me ha fascinado el arte digital y el modelado 3D. Ahora uso este alias para crear nuevas obras de arte arquitectónicas y NFT.',
+                twitter:'https://twitter.com/fantarchi',
                 
             },
             {
                 id: 5,
-                nombreUsuario:'Alayyyn',
-                imgPerfil:"/images/perfil5.jpg" ,
+                nombreUsuario:'pnkfdarts',
+                imgPerfil:"/images/perfil14.jpg" ,
+                descripcion: 'Papá primero. Artista digital en segundo lugar. Human - Nature - Renders de ciencia ficción. para E. y N. ❤️',
+                twitter: 'https://twitter.com/pnkfd',
                 
             },
             {

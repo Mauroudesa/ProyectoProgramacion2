@@ -1,5 +1,5 @@
 article.post{
-    border: 1px solid lightgray;
+    box-shadow: 0px 0px 30px #000;
     border-radius: 20px;
     margin-bottom: 20px;
 }
@@ -15,17 +15,18 @@ article.post div.info-usuario img{
     width: 79px;
 }
 article.post div.info-usuario h4{
-   margin: 10px 20px;
+   margin: 9px -3px;
 }
 
 article.post div.post-body{
     
-    border-bottom:antiquewhite
+    border-bottom:rgb(0, 0, 0)
 }
 .post-body a{
     display:block;
     width: 100%;
     text-align:justify;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
 }
 
 article.post div.post-reacciones ul.post-icons{
@@ -83,3 +84,6 @@ article.post div.post-comentarios ul li p{
     text-decoration: none;
 }
 
+.uk-width-1-6{
+    font-size: 20px;
+}
