@@ -41,26 +41,34 @@ const usuariosData = {
             },
             {
                 id: 6,
-                nombreUsuario:'TheCryptoMan',
-                imgPerfil: "/images/perfil6.jpg",
+                nombreUsuario:'HarshiniJK',
+                imgPerfil: "/images/perfil16.jpg",
+                descripcion: 'Artista digital, fotógrafa, proyectista y creador de collages de Sri Lanka-Perú. Hagamos magia x',
+                twitter: 'https://twitter.com/HarshiniJK',
+
                 
             },
             {
                 id: 7,
-                nombreUsuario:'ToTheMoon',
-                imgPerfil: "/images/perfil7.jpg",
+                nombreUsuario:'Soma',
+                imgPerfil: "/images/perfil17.jpg",
+                descripcion: 'Mi nombre es Joel y soy un diseñador y artista visual (en su mayoría) autodidacta con sede en San Francisco.',
+                twitter: 'https://twitter.com/soma_rgb',
                 
             },
             {
                 id: 8,
-                nombreUsuario:'BullMarket',
-                imgPerfil: "/images/perfil8.jpg",
-                
+                nombreUsuario:'Daniel Green',
+                imgPerfil: "/images/perfil18.jpg",
+                descripcion: 'Constructor de sueños, manipulador de mundos ...', 
+                twitter: 'https://twitter.com/digitalgyoza',
             },
             {
                 id: 9,
-                nombreUsuario:'DoGeMoon',
-                imgPerfil: "/images/perfil9.jpg",
+                nombreUsuario:'Kunststort',
+                imgPerfil: "/images/perfil19.jpg",
+                descripcion: 'Artista digital holandés',
+                twitter: 'https://twitter.com/Kunststort', 
                 
             }, 
             
