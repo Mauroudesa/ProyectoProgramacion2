@@ -8,23 +8,29 @@
 <body>
     <%- include('./partials/headerLogueado') %>
     <main>
-        <div class= "encierroForm">
         <div class="uk-section uk-section-small">
-            <div class="uk-container uk-container-large uk-flex">
-                <form action="POST">
-                    <div class="mb-3">
-                        <label for="formFileMultiple" class="form-label">Elegi tu foto!</label>
-                        <input class="form-control" type="file" id="formFileMultiple" multiple>
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Que estas pensando?</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
+            <div class="uk-container uk-container-large uk-flex uk-flex-middle uk-flex-center">
+                
+        <form action="/"method="GET">
+                        
+            <div class="mb-3">
+                <label for="formFileMultiple" class="form-label">Mostranos tu obra maestra:</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
+              </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Valor en $SOL:</label>
+              <input type="number" class="form-control" id="">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            
+          </form>
 
-                </form>
+                
 
             </div>
         </div>
+    </div>
+        
     </div>
     </main>
     

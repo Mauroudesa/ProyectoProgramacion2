@@ -20,12 +20,13 @@
                             <button class="uk-button uk-button-small uk-button-primary uk-margin-left">Seguir</button>
                         </div>
                         <div>
-                            <li><a href="<%= user.twitter %>" uk-icon="twitter"></a></li>
+                            <ul><a href="<%= user.twitter %>" uk-icon="twitter"></a></ul>
                             <p><%= user.descripcion %></p>
                             <ul class="red-usuario uk-flex uk-flex-between uk-width-1-2">
-                                <li>100 posts</li>
-                                <li>200 seguidores</li>
-                                <li>300 seguidos</li>
+                                <li>Seguidores: <%= user.Seguidores %></li>
+                                <li>Seguidos: <%= user.Seguidos %></li>
+                                <li>Posts: 6</li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -36,7 +37,7 @@
                         <div class="uk-card uk-card-hover uk-card-body uk-flex uk-flex-column uk-flex-middle uk-flex-center ">
                             <a href="/posteo/<%= post.id %>" class="link-detalle">
                                 <img src="<%= post.imagen %>" alt="foto de perfil" class="foto-perfil">
-                                <p class="uk-text-center">Lorem ipsum</p>
+                                <p class="uk-text-center">Price: <%= post.price %> <%= post.CryptoAcepted %></h3></p>
                             </a>
                         </div>
                         <% }) %>      

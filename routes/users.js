@@ -5,7 +5,7 @@ const usersController = require('../controllers/usersControllers');
 //router.get('/usuarios/:id',falsebookController.id)
 router.get('/registracion',usersController.registracion);
 router.get('/login',usersController.login);
-router.get('/miPerfil',usersController.miPerfil);
-router.get('/editarPerfil',usersController.editarPerfil);
+router.get('/miPerfil/:id',usersController.miPerfil);
+router.get('/editarPerfil/:id',usersController.editarPerfil);
 router.get('/detalleUsuario/:id',usersController.detalleUsuario);
 module.exports = router;

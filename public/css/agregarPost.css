@@ -1,5 +1,9 @@
 label{
-    color: white;
+    color: rgb(0, 0, 0);
+    font-family: 'Alumni Sans', sans-serif;
+    font-family: 'Kaisei Tokumin', serif;
+    font-weight: bolder;
+    text-decoration: none;
 }
 .form{
     left: 50%;

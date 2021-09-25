@@ -5,6 +5,7 @@
 .info-usuario .red-usuario{
     list-style: none;
     padding: 0  ;
+    font-weight: bold;
 }
 
 .muro{
@@ -17,8 +18,8 @@
     text-decoration: none;
 }
 .uk-width-1-2{
-    color: white;
+    color: black;
 }
 p{
-    color: white;
+    color: black;
 }

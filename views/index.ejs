@@ -40,7 +40,7 @@
                         </div>
                         <div class="post-comentarios">
                             <% post.comentarios.forEach(comentario => { %>
-                                <i><a href="/users/detalleUsuario/<%=comentario.user.id%>"><%=comentario.user.nombreUsuario%></i></a> - <%= comentario.contenido %><br>  
+                                <i><a href="/users/detalleUsuario/<%=comentario.user.id%>"><%=comentario.user.nombreUsuario%></i></a> - <%= comentario.contenido %> - <%= comentario.fecha %><br>  
                                
                               <% }) %>
                                 </li>
