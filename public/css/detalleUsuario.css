@@ -37,11 +37,18 @@ p{
 
 .twitter{
     position: absolute;
-    left: 500px;
-    top: -23px;
+    left: 170px;
+    top: -15px;
 }
 .uk-button:not(:disabled) {
     cursor: pointer;
-    left: -20px;
+    left: 90px;
     position: absolute;
+    top: 5.9px;
+}
+.usuario{
+    position: absolute;
+    left: -15px;
+    top: -50px;
+    width: 60px;
 }
