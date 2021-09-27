@@ -1,5 +1,7 @@
 .info-usuario .foto-perfil{
     border-radius: 50%;
+    width: 160px;
+    box-shadow: 0px 0px 10px black;
 }
 
 .info-usuario .red-usuario{
@@ -16,10 +18,30 @@
 .muro .link-detalle{
     color: gray;
     text-decoration: none;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
 }
 .uk-width-1-2{
     color: black;
 }
 p{
     color: black;
+}
+.descripcion{
+    color: black;
+    font-style: italic;
+}
+.uk-flex-column {
+    flex-direction: column;
+    position: relative;
+}
+
+.twitter{
+    position: absolute;
+    left: 500px;
+    top: -23px;
+}
+.uk-button:not(:disabled) {
+    cursor: pointer;
+    left: -20px;
+    position: absolute;
 }

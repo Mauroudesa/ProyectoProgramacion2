@@ -9,7 +9,12 @@ const userControllers = {
         res.render('login')
 },
 miPerfil:function (req,res) {
-    res.render('miPerfil')
+    const user = usuarios.findUsername(req.params.id);
+    console.log(user);
+    const posts = postModule.findByUser(user.id);
+
+    res.render('miPerfil', {user, posts})  
+    
 },
 editarPerfil:function (req,res) {
     res.render('editarPerfil')

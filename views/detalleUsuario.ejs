@@ -18,10 +18,11 @@
                         <div class="uk-flex uk-flex-middle">
                             <h3 class="uk-margin-remove"> </h3>
                             <button class="uk-button uk-button-small uk-button-primary uk-margin-left">Seguir</button>
+                            <ul class="twitter"><a href="<%= user.twitter %>" uk-icon="twitter"></a></ul>
                         </div>
                         <div>
-                            <ul><a href="<%= user.twitter %>" uk-icon="twitter"></a></ul>
-                            <p><%= user.descripcion %></p>
+                            
+                            <p class="descripcion"><%= user.descripcion %></p>
                             <ul class="red-usuario uk-flex uk-flex-between uk-width-1-2">
                                 <li>Seguidores: <%= user.Seguidores %></li>
                                 <li>Seguidos: <%= user.Seguidos %></li>
