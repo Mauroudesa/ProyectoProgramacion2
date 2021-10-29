@@ -5,29 +5,29 @@
     <link rel="stylesheet" href="/css/detalleUsuario.css">
     </head>
 <body>
-    <%- include('./partials/headerLogueado') %>
+    <%- include('./partials/header') %>
 
     <main>
         <div class="uk-section uk-section-small">
             <div class="uk-container uk-container-small">
                 <section class="info-usuario uk-flex uk-flex-around uk-width-1-1">
                     <div class="uk-width-1-3 uk-flex uk-flex-center uk-flex-middle">
-                        <img src="<%= user.imgPerfil %>" alt="foto de perfil" class="foto-perfil">
+                        <img src="<%= user.foto_perfil %>" alt="foto de perfil" class="foto-perfil">
                     </div>
                     <div class="uk-width-2-3 uk-flex uk-flex-column uk-flex-around">
                         <div class="uk-flex uk-flex-middle">
                             <h3 class="uk-margin-remove"> </h3>
-                            <h4 class="usuario"><%= user.nombreUsuario %></h4>
+                            <h4 class="usuario"><%= user.nombre_usuario %></h4>
                             <button class="uk-button uk-button-small uk-button-primary uk-margin-left">Seguir</button>
                             <ul class="twitter"><a href="<%= user.twitter %>" uk-icon="twitter"></a></ul>
-                            
+                     
                         </div>
                         <div>
                             
                             <p class="descripcion"><%= user.descripcion %></p>
                             <ul class="red-usuario uk-flex uk-flex-between uk-width-1-2">
-                                <li>Seguidores: <%= user.Seguidores %></li>
-                                <li>Seguidos: <%= user.Seguidos %></li>
+                                <li>Seguidores: <%= user.seguidores %></li>
+                                <li>Seguidos: <%= user.seguidos %></li>
                                 <li>Posts: 6</li>
                                 
                             </ul>
@@ -37,11 +37,11 @@
                <section class="muro uk-flex uk-flex-middle uk-flex-center">
                     <div class="uk-grid uk-child-width-1-3 uk-width-1-1 uk-margin-remove" uk-grid>
 
-                        <% posts.forEach(post => { %> 
+                        <% posts.forEach(posts => { %> 
                         <div class="uk-card uk-card-hover uk-card-body uk-flex uk-flex-column uk-flex-middle uk-flex-center ">
-                            <a href="/posteo/<%= post.id %>" class="link-detalle">
-                                <img src="<%= post.imagen %>" alt="foto de perfil" class="foto-perfil">
-                                <p class="uk-text-center">Price: <%= post.price %> <%= post.CryptoAcepted %></h3></p>
+                            <a href="/posteo/<%= posts.id_post %>" class="link-detalle">
+                                <img src="<%= posts.imagen %>" alt="foto de perfil" class="foto-perfil">
+                                <p class="uk-text-center">Price: <%= posts.precio_sol %> <P>SOL</P></h3></p>
                             </a>
                         </div>
                         <% }) %>      

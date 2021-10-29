@@ -1,55 +1,55 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-    
-<%- include('./partials/head') %>  
+<html lang="en">
+
+  <%- include('./partials/head') %>  
 
 <body>
     <%- include('./partials/header') %>  
     <main>
-    <main>
         <div class="uk-section uk-section-small">
             <div class="uk-container uk-container-large uk-flex">
                 <section id="posts" class="uk-flex uk-flex-middle uk-flex-center uk-flex-column uk-child-width-1-2 uk-width-1-1">
-                    <% posts.forEach(posteos => { %> 
+                    <% POSTEOS.forEach(POSTEOS => { %> 
                     <article class="post uk-card-default uk-flex uk-flex-column">
                         
                         <div class="info-usuario uk-flex ">
                             <div>
-                                <!-- <img src="<%= //user.foto_perfil %>" alt="">  -->
+                                <img src="<%= USUARIOS.FOTO_PERFIL %>" alt=""> 
                             </div>
-                            <h4 class="usuario"><a href="/users/detalleUsuario/<%= posteos.id_creo %>"><%= posteos.id_creo%></a></h4>
+                            <h4 class="usuario"><a href="/users/detalleUsuario/<%= POSTEOS.ID_CREO %>"><%= USUARIOS.NOMBRE_USUARIO%></a></h4>
                         
                         </div>
                       
                         <div class="post-body uk-flex uk-flex-center">
-                            <a href="/posteo/<%= posteos.id_post %>">
-                                <img src="<%= posteos.imagen %>" alt="">
+                            <a href="/posteo/<%= POSTEOS.ID_POST %>">
+                                <img src="<%= POSTEOS.IMAGEN %>" alt="">
                             </a>
                         </div>
                         <div class="post-reacciones">
                             <ul class="post-icons uk-flex uk-flex-between">
                                 <li><span class="" uk-icon="icon:heart; ratio: 1.3"p></span>
                                 </li>
-                                <li class="megusta"><p><%= posteos.likes%></p></li>
+                                <li class="megusta"><p><%= POSTEOS.LIKES%></p></li>
                                 <!-- EN LA BD HAY Q PONER LIKES? -->
                                 <li><span class="" uk-icon="icon:comments; ratio: 1.3"></span>
                                 </li>
                             </ul>
                             <div class="post-pie uk-flex">
-                                <h5 class="uk-width-1-6"><a href="/users/detalleUsuario/<%= posteos.id_usuario_creo %>">Comentarios</a></h5>
-                                <h6 class="uk-width-2-6">Price: <%= posteos.precio_sol %> <P>SOL</P></h6>
+                                <h5 class="uk-width-1-6"><a href="/users/detalleUsuario/<%= POSTEOS.ID_USUARIO_CREO %>">Comentarios</a></h5>
+                                <h6 class="uk-width-2-6">Price: <%= POSTEOS.PRECIO_SOL %> <P>SOL</P></h6>
                             </div>
                         </div>
                         <div class="post-comentarios">
-                              
+                            <% COMENTARIOS.CONTENIDO.forEach(COMENTARIOS => { %>
+                                <i><a href="/users/detalleUsuario/<%=COMENTARIOS.ID_USUARIO%>"><%=USUARIOS.NOMBRE_USUARIO%></i></a> - <%= COMENATARIOS.CONTENIDO %> - <%= COMENTARIOS.FECHA_CREACION %><br>  
                                
-                             
+                              <% }) %>
                                 </li>
                             </ul>
                         </div>
                     </article>
-                       
-                    <% }) %>         
+                    <% }) %>                
+                    
                 </section>
 
             </div>

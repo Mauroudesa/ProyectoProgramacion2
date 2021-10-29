@@ -1,0 +1,58 @@
+
+  <% if (app.user) { %>
+
+<header class="uk-background-primary">
+   
+    <section class=" uk-container uk-container-large">
+        <div class="thenavbar">
+            <nav class="" uk-navbar>
+                <div class="uk-navbar-left">
+                    <h2 class="logo"><a href="/">SolanaARG</a></h2>
+                </div>
+                <div class="uk-navbar-center">
+                    <ul class="uk-flex uk-flex-between uk-flex-middle">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/users/miPerfil/1">Mi perfil</a</li>
+                    </ul>
+                </div>
+                
+                <div class="uk-navbar-right">
+                    <a href="/posteo/agregarPost">Agregar post</a>
+                    <a class="nav-link" href="/logout">Logout</a>
+                    <p></p>
+                    <form action="" class="uk-search uk-search-default">
+                        <span uk-search-icon></span>
+                        <input  type="search" class="uk-search-input" placeholder="Buscar...">
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </section>
+</header>
+<% } else { %>
+    <header class="uk-background-primary">
+        <section class=" uk-container uk-container-large">
+            <div class="">
+                <nav class="" uk-navbar>
+                    <div class="uk-navbar-left">
+                        <h2 class="logo"><a href="/">SolanaARG</a></h2>
+                    </div>
+                    <div class="uk-navbar-center">
+                        <ul class="uk-flex uk-flex-between uk-flex-middle">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/registracion">Registro</a></li>
+                            <li><a href="/login">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-navbar-right">
+                 
+                        <form action="" class="uk-search uk-search-default">
+                            <span uk-search-icon></span>
+                            <input type="search" class="uk-search-input" placeholder="Buscar...">
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <% } %>

@@ -1,5 +1,5 @@
 const path = require('path')
  
 module.exports = {
- 'models-path': path.resolve('./data/models'),
+ 'models-path': path.resolve('./database/models'),
 }

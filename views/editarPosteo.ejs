@@ -10,16 +10,17 @@
         <div class="uk-section uk-section-small">
             <div class="uk-container uk-container-large uk-flex uk-flex-middle uk-flex-center">
                 
-        <form action="/"method="GET">
+        <form method="post">
                         
             <div class="mb-3">
-                <label for="formFileMultiple" class="form-label">Cambiar imagen de perfil</label>
+                <label for="formFileMultiple" class="form-label">Cambiar imagen</label>
                 <input class="form-control" type="file" id="formFileMultiple" multiple>
               </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Cambiar descripcion</label>
-              <input type="" class="form-control" id="">
-            </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Valor en $SOL   <% post.contenido %> </label>
+              
+                <input type="number" class="form-control" name="contenido" id="contenido">
+              </div>
             <button type="submit" class="btn btn-primary">Submit</button>
             
           </form>

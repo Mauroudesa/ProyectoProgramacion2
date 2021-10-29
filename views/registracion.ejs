@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="/css/miPerfil.css">
 </head>
 <body>
-    <%- include('./partials/headerLogueado') %>
+    <%- include('./partials/header') %>
 
     <main>
         <div class="uk-section uk-section-small">
@@ -13,52 +13,52 @@
                 
                     
                    
-                <form class="row g-3 needs-validation" novalidate action="/"method="GET">
+                <form class="row g-3 needs-validation" novalidate method="POST">
                     <div class="col-md-4">
-                      <label for="validationCustom01" class="form-label">First name</label>
-                      <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                      <label for="validationCustom01" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" name="nombre" id="nombre"  required>
                       <div class="valid-feedback">
                         Looks good!
                       </div>
                     </div>
                     <div class="col-md-4">
-                      <label for="validationCustom02" class="form-label">Last name</label>
-                      <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                      <label for="validationCustom02" class="form-label">Apellido</label>
+                      <input type="text" class="form-control" id="apellido" name="apellido" required>
                       <div class="valid-feedback">
                         Looks good!
                       </div>
                     </div>
                     <div class="col-md-4">
-                      <label for="validationCustomUsername" class="form-label">Username</label>
+                      <label for="validationCustomUsername" class="form-label">Nombre de Usuario</label>
                       <div class="input-group has-validation">
                         <span class="input-group-text" id="inputGroupPrepend">@</span>
-                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"name= "username" required>
+                        <input type="text" class="form-control" id="nombre_usuario" aria-describedby="inputGroupPrepend"name= "nombre_usuario" required>
                         <div class="invalid-feedback">
-                          Please choose a username.
+                         Porfavor, elegi tu nombre de usuario
                         </div>
                       </div>
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+                        <label for="exampleInputEmail1" class="form-label">email</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
                       </div>
                       <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <label for="exampleInputPassword1" class="form-label">contrasena</label>
+                        <input type="password" class="form-control" name="contrasena" id="contrasena">
                       </div>
                       <div class="col-12">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                           <label class="form-check-label" for="invalidCheck">
-                            Agree to terms and conditions
+                            Acepto los terminos y condiciones
                           </label>
                           <div class="invalid-feedback">
-                            You must agree before submitting.
+                            Tenes que aceptar los terminos y condiciones para continuar
                           </div>
                         </div>
                       </div>
                       <div class="col-12">
-                        <button class="btn btn-primary" type="submit">Submit form</button>
+                        <button class="btn btn-primary" type="submit">Registarme</button>
                       
                   </form>
             
