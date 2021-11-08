@@ -21,6 +21,8 @@ editarPerfil:function (req,res) {
 },
 detalleUsuario: async function (req,res) {
     const user= await db.usuarios.findByPk(req.params.id);
+  //  include:[{association:'posteos'}] Esto va en ves de Posts, le pongo posteos porque es lo que le puse en la asociacion
+    
     const posts = await db.posteos.findAll({where: {id_usuario_creo: req.params.id}});// Si la funcion es asincronica puedo usar await. el async es como una promesa. Lo uso en ves del catch, es mas limpio
     res.render('detalleUsuario', {user, posts});
 },

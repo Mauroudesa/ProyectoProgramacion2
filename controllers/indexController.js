@@ -62,6 +62,16 @@ login: async function(req, res, next) {
     res.redirect('/');
   },
 }
+const validateUser = function (req) {
+    const errors = [];
+    if (req.body.contrasena.length < 5) {
+      errors.push('LA CONSTRASEÑA ES INSEGURA');
+    }
+    if (!req.body.apellido) {
+      errors.push('EL APELLIDO ES REQUERIDO');
+    }
+    return errors;
+  }
 module.exports = controllers;
 
 

@@ -21,6 +21,12 @@ module.exports= (sequelize,dataTypes) => {
         likes: {
             type: dataTypes.INTEGER
         },
+        created_at:{
+            type: dataTypes.DATE
+        },
+        updated_at:{
+            type: dataTypes.DATE
+        }
     }
     const config = {
     tableName: 'posteos',//Poner como este en la base de datos

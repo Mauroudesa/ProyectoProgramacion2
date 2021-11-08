@@ -36,6 +36,12 @@ module.exports= (sequelize,dataTypes) => {
         seguidores: {
             type: dataTypes.STRING
         },
+        created_at:{
+            type: dataTypes.DATE
+        },
+        updated_at:{
+            type: dataTypes.DATE
+        }
     }
     const config = {
     tableName: 'usuarios',//Poner como este en la base de datos
@@ -43,5 +49,13 @@ module.exports= (sequelize,dataTypes) => {
     underscored: true 
     }
     const usuarios = sequelize.define(alias,cols,config)
+
+    usuarios.associate= function(models){
+        usuarios.hasMany(models.posteos,{
+            as:'posteos', // lo 
+            foreignKey:'id_usuario_creo'
+        })
+    };
     return usuarios;
+
 }

@@ -17,6 +17,9 @@ module.exports= (sequelize,dataTypes) => {
         },
         created_at:{
             type: dataTypes.DATE
+        },
+        updated_at:{
+            type: dataTypes.DATE
         }
     }
     const config = {
