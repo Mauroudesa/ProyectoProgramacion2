@@ -26,7 +26,10 @@ module.exports= (sequelize,dataTypes) => {
         },
         updated_at:{
             type: dataTypes.DATE
-        }
+        },
+        fotoPerfil: {
+            type: dataTypes.STRING
+        },
     }
     const config = {
     tableName: 'posteos',//Poner como este en la base de datos
@@ -34,5 +37,16 @@ module.exports= (sequelize,dataTypes) => {
     underscored: false
     }
     const posteos = sequelize.define(alias,cols,config)
+    
+    posteos.associate = function(models) {
+        posteos.hasMany(models.comentarios,{
+            as:'comments', 
+            foreignKey:'id_post'
+        });
+        posteos.belongsTo(models.usuarios,{
+            as:'autor', 
+            foreignKey:'id_usuario_creo'
+        });
+    };
     return posteos;
 }

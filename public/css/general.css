@@ -3,20 +3,24 @@
 body{
  position: relative;
  padding-bottom: 3em;
- background-color: rgb(255, 255, 255);
+ background-image: url('https://nintiaestate.com/static/media/white-bg.2acb19e5.jpg');
  min-height: 100vh;
+ 
 }
 *{
     box-sizing: border-box;
 }
 main{
     margin-bottom: 40px;
+    
 }
 .uk-background-primary{
-   background-color:rgb(255, 255, 255) !important;
+   
+    background-image: url('https://nintiaestate.com/static/media/white-bg.2acb19e5.jpg');
 }
 .uk-container .uk-container-large{
-    background-color: rgb(255, 233, 199);
+   
+    background-image: url('https://nintiaestate.com/static/media/white-bg.2acb19e5.jpg');
 }
 body a {
     color: rgb(0, 0, 0);
@@ -43,10 +47,10 @@ font-family: 'Lato', sans-serif;
 font-family: 'Mulish', sans-serif;
 }
 .uk-container{
-    background-color: rgb(255, 255, 255);
+    background-image: url('https://nintiaestate.com/static/media/white-bg.2acb19e5.jpg');
 }
 .uk-section{
-    background-color:rgb(255, 255, 255);
+    background-image: url('https://nintiaestate.com/static/media/white-bg.2acb19e5.jpg');
 }
 .megusta{
     margin-right: 87%;

@@ -10,16 +10,13 @@
         <div class="uk-section uk-section-small">
             <div class="uk-container uk-container-large uk-flex uk-flex-middle uk-flex-center">
                 
-        <form action="/"method="GET">
+              <form method="POST" enctype="multipart/form-data">
                         
             <div class="mb-3">
                 <label for="formFileMultiple" class="form-label">Cambiar imagen de perfil</label>
-                <input class="form-control" type="file" id="formFileMultiple" multiple>
+                <input class="form-control" type="file" name="imagen" id="imagen" >
               </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Cambiar descripcion</label>
-              <input type="" class="form-control" id="">
-            </div>
+           
             <button type="submit" class="btn btn-primary">Submit</button>
             
           </form>

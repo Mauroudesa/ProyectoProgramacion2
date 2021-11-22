@@ -5,13 +5,17 @@ const bcrypt = require('bcryptjs');
 
 const controllers = {
   index: function (req,res) {
-        db.posteos.findAll()// la promesa aca es que te va a traer todos lo sposteos, findall
+    db.posteos.findAll({
+      include: [
+        { association: 'autor'},
+        
+      ] })// la promesa aca es que te va a traer todos lo sposteos, findall
   
         .then((posts)=>{// solo si la promesa se cumple
             res.render('index', {posts})  
         })      
         .catch((error)=>{ //ataja el error
-            res.send(error)
+            res.send('mauro')
         })
         },
  search: async function (req,res) {
@@ -57,9 +61,9 @@ login: async function(req, res, next) {
     })
   },
   logout: function(req, res, next) {
-    res.clearCookie('user');
-    req.session.user = null;
-    res.redirect('/');
+    res.clearCookie('user'); //! BORRO COOKIE 
+    req.session.user = null; //! BORRO SECION DE USUARIO 
+    res.redirect('/'); //! REDIRECCIONO A INDEX 
   },
 }
 const validateUser = function (req) {

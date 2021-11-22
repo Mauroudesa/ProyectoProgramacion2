@@ -12,29 +12,34 @@
             <div class="uk-container uk-container-small">
                 <section class="info-usuario uk-flex uk-flex-around uk-width-1-1">
                     <div class="uk-width-1-3 uk-flex uk-flex-center uk-flex-middle">
-                        <img src="<%= users.foto_perfil %>" alt="foto de perfil" class="foto-perfil">
+                        <img src="<%= user.foto_perfil %>" alt="foto de perfil" class="foto-perfil">
                     </div>
                     <div class="uk-width-2-3 uk-flex uk-flex-column uk-flex-around">
                         <div class="uk-flex uk-flex-middle">
                             <h3 class="uk-margin-remove"></h3>
-                            <a href="/users/editarPerfil/1" uk-icon="icon:cog; ratio: 1.2" class="uk-margin-left"></a>
-                            <ul class="twitter"><a href="<%= users.twitter %>" uk-icon="twitter"></a></ul>
+                            <h3> <%= user.nombre_usuario %></h3>
+                            <a href="/user/editarPerfil/1" uk-icon="icon:cog; ratio: 1.2" class="uk-margin-left"></a>
+                           
+                            <ul class="twitter"><a href="<%= user.twitter %>" uk-icon="twitter"></a></ul>
                         </div>
                         <div>
-                            <p class="descripcion"><%= users.descripcion %></p>
+                            <p class="descripcion"><%= user.descripcion %></p>
                             <ul class="red-usuario uk-flex uk-flex-between uk-width-1-2">
-                                <li>Seguidores: <%= users.seguidores %></li>
-                                <li>Seguidos: <%= users.seguidos %></li>
+                                <li>Seguidores: <%= user.seguidores %></li>
+                                <li>Seguidos: <%= user.seguidos %></li>
                                 <li>Posts: 6</li>
+                                
                             </ul>
+                            
                         </div>
                     </div>
+                    
 
                 </section>
                 
                 <section class="muro uk-flex uk-flex-middle uk-flex-center">
                     <div class="uk-grid uk-child-width-1-3 uk-width-1-1 uk-margin-remove" uk-grid>
-                        <% posts.forEach(posteos => { %> 
+                        <% user.posts.forEach(posteos => { %> 
                             <div class="uk-card uk-card-hover uk-card-body uk-flex uk-flex-column uk-flex-middle uk-flex-center ">
                                 <a href="/posteo/<%= posteos.id_post %>" class="link-detalle">
                                     <img src="<%= posteos.imagen %>" alt="foto de perfil" class="foto-perfil">
