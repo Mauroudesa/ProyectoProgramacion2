@@ -10,16 +10,16 @@
         <div class="uk-section uk-section-small">
             <div class="uk-container uk-container-large uk-flex uk-flex-middle uk-flex-center">
                 
-        <form method="post">
+        <form method="POST" enctype="multipart/form-data">
                         
             <div class="mb-3">
                 <label for="formFileMultiple" class="form-label">Cambiar imagen</label>
-                <input class="form-control" type="file" id="formFileMultiple" multiple>
+                <input class="form-control" type="file" name="imagen" id="imagen" >
               </div>
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Valor en $SOL   <% post.contenido %> </label>
+                <label for="exampleInputPassword1" class="form-label">Valor en $SOL   <% post.precio_sol %> </label>
               
-                <input type="number" class="form-control" name="contenido" id="contenido">
+                <input type="number" class="form-control" name="content" id="content">
               </div>
             <button type="submit" class="btn btn-primary">Submit</button>
             

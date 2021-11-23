@@ -39,27 +39,22 @@ const posteosControllers = {
     edit: async function(req, res) {
         const post = await db.posteos.findByPk(req.params.id)
         if (!post) {
-          return res.render('error');
+          return res.render('mauro');
         }
   
-        res.render('edit', {post});
+        res.render('editarPosteo', {post});
       },
       update: function(req, res) {
-        if (req.file) req.body.imagen = (req.file.destination + req.file.filename).replace('public', '');
-        db.posteos.update({
-          precio_sol: req.body.contenido,
-          ...req.body,
-          id_usuario_creo: req.session.user.id_usuario,
-
-        }, { where: { id_post: req.params.id }}).then(posteos => {
+        if (req.file) req.body.imagen = (req.file.destination + req.file.filename).replace('public', ''); 
+        db.posteos.update(req.body, {where: {id_post: req.params.id} }).then(post =>{ 
           res.redirect('/');
         }).catch(error => {
           return res.render(error);
         })
+      
       },
 
       delete: function(req, res) {
-        // Chequear que sea el dueño
         db.posteos.destroy({ where: { id_post: req.params.id }})
         .then(() => {
           res.redirect('/');

@@ -49,7 +49,8 @@ login: async function(req, res, next) {
         nombre: req.body.nombre,
         apellido: req.body.apellido,
         email: req.body.email,
-        contrasena: req.body.contrasena
+        contrasena: req.body.contrasena,
+        foto_perfil: req.body.foto_perfil
     })
 
     .then(posteos => {

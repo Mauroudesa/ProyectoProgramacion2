@@ -12,7 +12,7 @@ router.get('/:id',posteoController.detallePost)
 router.post('/:id', posteoController.comment);
 
 router.get('/:id/edit',posteoController.edit)
-router.post('/:id/edit',posteoController.update)
+router.post('/:id/edit',upload.single('imagen'), posteoController.update)
 
 router.post('/:id/delete',posteoController.delete)
 

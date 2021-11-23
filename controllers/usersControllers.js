@@ -23,22 +23,24 @@ miPerfil: async function (req,res) {
 
 },  
 
-editarPerfil:function (req,res) {
-    res.render('editarPerfil')
-    
-},
-store: function (req,res) { 
-    if (req.file) req.body.imagen = (req.file.destination + req.file.filename).replace('public', ''); 
-      // remplazo public x nada y solo agarro lo q hay en el objeto de req.file, quiero desitnation y filename
-      db.usuarios.create({
-        ...req.body,
-        id_usuario: req.session.user.id_usuario,
-      }).then(post => {
-        res.redirect('/');
-      }).catch(error => {
-        return res.render(error);
-      })
+editarPerfil: async function(req, res) {
+    const post = await db.usuarios.findByPk(req.params.id)
+    if (!post) {
+      return res.render('editarPerfil');
+    }
+
+    res.render('editarPerfil', {user});
   },
+  update: function(req, res) {
+    if (req.file) req.body.imagen = (req.file.destination + req.file.filename).replace('public', ''); 
+    db.usuarios.update(req.body, {where: {id_usuario: req.params.id} }).then(post =>{ 
+      res.redirect('/');
+    }).catch(error => {
+      return res.render(error);
+    })
+  
+  },
+
   
 
 //! Inplemente la asociaccion 
