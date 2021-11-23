@@ -44,7 +44,7 @@ module.exports= (sequelize,dataTypes) => {
             foreignKey:'id_post'
         });
         posteos.belongsTo(models.usuarios,{
-            as:'autor', 
+            as:'author', 
             foreignKey:'id_usuario_creo'
         });
     };

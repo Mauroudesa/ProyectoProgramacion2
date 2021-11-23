@@ -32,11 +32,11 @@ module.exports= (sequelize,dataTypes) => {
     comentarios.associate = function (models) {
         comentarios.belongsTo(models.posteos, {
             as:'post',
-            
+            foreignKey: 'id_post'
         });
         comentarios.belongsTo(models.usuarios, {
-            as:'autor',
-            foreignkey: 'id_usuario'
+            as:'author',
+            foreignKey: 'id_usuario'
         });
         
     };

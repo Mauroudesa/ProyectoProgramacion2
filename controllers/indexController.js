@@ -5,9 +5,7 @@ const bcrypt = require('bcryptjs');
 
 const controllers = {
   index: function (req,res) {
-    db.posteos.findAll({
-      include: [
-        { association: 'autor'},
+    db.posteos.findAll({include: [{ association: 'author' },
         
       ] })// la promesa aca es que te va a traer todos lo sposteos, findall
   

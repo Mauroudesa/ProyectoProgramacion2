@@ -20,17 +20,17 @@ const posteosControllers = {
     },
 
     detallePost: async function  (req,res) {
-        const post = await db.posteos.findByPk(req.params.id,
-          { include: [
-            { association: 'comments' }
-
+      const post = await db.posteos.findByPk(req.params.id,
+        { include: [
+          { association: 'comments', include: [{association: 'author'}]  }
           ]}
           )
 
-        
-            if (!post) {
-              return res.render ('error')
-            }
+      
+          if (!post) {
+            return res.render ('error')
+          }
+      
         
 
         res.render('detallePost', {post});        
