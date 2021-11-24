@@ -13,5 +13,4 @@ router.get('/editarPerfil',usersController.editarPerfil);
 router.get('/detalleUsuario/:id',usersController.detalleUsuario);
 
 
-
 module.exports = router;

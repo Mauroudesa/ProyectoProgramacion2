@@ -13,7 +13,7 @@ const { nextTick } = require('process');
 
 var app = express();
 const db = require('./database/models');
-
+//db.sequelize.sync({alter:true})
 
 app.use(
   session({

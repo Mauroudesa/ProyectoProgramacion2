@@ -45,11 +45,11 @@ module.exports= (sequelize,dataTypes) => {
     }
     const config = {
     tableName: 'usuarios',//Poner como este en la base de datos
-    timestamps: false, //siempre poner false excepto q este muy seguro
+    timestamps: true, //siempre poner false excepto q este muy seguro
     underscored: true 
     }
     const usuarios = sequelize.define(alias,cols,config)
-    //! Declare la asuciacion
+    
     usuarios.associate = function(models) {
         usuarios.hasMany(models.posteos,{
             as:'posts', 

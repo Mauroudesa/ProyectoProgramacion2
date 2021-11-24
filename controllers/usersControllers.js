@@ -16,7 +16,7 @@ miPerfil: async function (req,res) {
         res.send('NO EXISTE EL USUARIO')
     }
     const user = await db.usuarios.findByPk(req.session.user.id_usuario, {
-        include: [{association: 'posts'}]
+        include: [{association: 'posts', order: [['posts','id_usuario', 'desc']] }] 
     });
   
     res.render('miPerfil', {user});

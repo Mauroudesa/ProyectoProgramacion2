@@ -5,9 +5,10 @@ const bcrypt = require('bcryptjs');
 
 const controllers = {
   index: function (req,res) {
-    db.posteos.findAll({include: [{ association: 'author' },
-        
-      ] })// la promesa aca es que te va a traer todos lo sposteos, findall
+    db.posteos.findAll({include: [{ association: 'author' },    
+    
+  ], order: [['id_post', 'desc']]})
+      // la promesa aca es que te va a traer todos lo sposteos, findall
   
         .then((posts)=>{// solo si la promesa se cumple
             res.render('index', {posts})  

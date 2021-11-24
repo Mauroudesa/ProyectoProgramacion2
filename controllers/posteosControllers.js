@@ -11,6 +11,7 @@ const posteosControllers = {
         // remplazo public x nada y solo agarro lo q hay en el objeto de req.file, quiero desitnation y filename
         db.posteos.create({
           ...req.body,
+          created_at: new Date(),
           id_usuario_creo: req.session.user.id_usuario,
         }).then(post => {
           res.redirect('/');
@@ -46,6 +47,7 @@ const posteosControllers = {
       },
       update: function(req, res) {
         if (req.file) req.body.imagen = (req.file.destination + req.file.filename).replace('public', ''); 
+        req.params.updated_at = new Data();
         db.posteos.update(req.body, {where: {id_post: req.params.id} }).then(post =>{ 
           res.redirect('/');
         }).catch(error => {
