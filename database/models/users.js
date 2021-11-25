@@ -1,6 +1,9 @@
 module.exports= (sequelize,dataTypes) => {
+
     const alias = 'usuarios';
+
     const cols = {
+
         id_usuario:{ //declaro las columnas de la base de datos, mismo nombre que la db.
             autoIncrement: true,
             primaryKey: true,
@@ -43,19 +46,33 @@ module.exports= (sequelize,dataTypes) => {
             type: dataTypes.DATE
         }
     }
+
     const config = {
-    tableName: 'usuarios',//Poner como este en la base de datos
-    timestamps: true, //siempre poner false excepto q este muy seguro
+    tableName: 'usuarios',
+    timestamps: false, 
     underscored: true 
     }
-    const usuarios = sequelize.define(alias,cols,config)
+
     
-    usuarios.associate = function(models) {
+    
+    
+    const usuarios = sequelize.define(alias,cols,config)
+
+        usuarios.associate = function(models) {
+
         usuarios.hasMany(models.posteos,{
             as:'posts', 
-            foreignKey:'id_usuario_creo'
+            foreignKey:'id_usuario_creo' //ver si esta ok
         });
-        
+        usuarios.hasMany(models.follow,{
+            as:'Follower', 
+            foreignKey:'Following_id'
+        });
+        usuarios.hasMany(models.follow,{
+            as:'Following', 
+            foreignKey:'Follower_id'
+        });
+
     };
     return usuarios;
 
