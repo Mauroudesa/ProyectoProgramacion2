@@ -12,5 +12,7 @@ router.get('/editarPerfil',usersController.editarPerfil);
 //router.get('/editarPerfil/:id',usersController.editarPerfil);
 router.get('/detalleUsuario/:id',usersController.detalleUsuario);
 
+router.get('/:id/Follow',usersController.Follow);
+router.get('/:id/unfollow',usersController.unfollow);
 
 module.exports = router;
