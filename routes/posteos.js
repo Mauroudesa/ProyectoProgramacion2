@@ -15,6 +15,8 @@ router.get('/:id/edit',posteoController.edit)
 router.post('/:id/edit',upload.single('imagen'), posteoController.update)
 
 router.post('/:id/delete',posteoController.delete)
+router.get('/:id/like',posteoController.like)
+
 
 
 
