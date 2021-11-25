@@ -7,7 +7,8 @@
 <body>
     <%- include('./partials/header') %>
 
-    <main>
+    <main>   
+
         <div class="uk-section uk-section-small">
             <div class="uk-container uk-container-small">
                 <section class="info-usuario uk-flex uk-flex-around uk-width-1-1">
@@ -17,19 +18,25 @@
                     <div class="uk-width-2-3 uk-flex uk-flex-column uk-flex-around">
                         <div class="uk-flex uk-flex-middle">
                             <h3 class="uk-margin-remove"> </h3>
-                            <h4 class="usuario"><%=  %></h4>
-                            <button class="uk-button uk-button-small uk-button-primary uk-margin-left">Seguir</button>
+                            <h4 class="usuario"><%= user.nombre_usuario %></h4>
+                            <button class="uk-button uk-button-small uk-button-primary uk-margin-left"> Follow 
+                                <% if (!user.followers.find(follow => follow.following_id == app.user.id)) { %>
+                                    <% }%>
+                                    <% if (user.followers.find(follow => follow.follower_id == app.user.id)) { %>
+                                        <a href="/users/<%= user.id %>/unfollow">Unfollow</a>
+                                        <% }%>
+                            </button>
                             <ul class="twitter"><a href="" uk-icon="twitter"></a></ul>
                      
                         </div>
+            
+                
                         <div>
-                            
                             <p class="descripcion"><%= user.descripcion %></p>
                             <ul class="red-usuario uk-flex uk-flex-between uk-width-1-2">
-                                <li>Seguidores: <%= user.seguidores %></li>
-                                <li>Seguidos: <%= user.seguidos %></li>
-                                <li>Posts: 6</li>
-                                
+                                <h4>Seguidores: <%= user.followers.length %></h4>
+                                <h4>Seguidos: <%= user.following.length %></h4>
+                         
                             </ul>
                         </div>
                     </div>
