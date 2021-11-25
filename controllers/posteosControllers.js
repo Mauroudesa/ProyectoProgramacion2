@@ -11,7 +11,6 @@ const posteosControllers = {
         // remplazo public x nada y solo agarro lo q hay en el objeto de req.file, quiero desitnation y filename
         db.posteos.create({
           ...req.body,
-          created_at: new Date(),
           id_usuario_creo: req.session.user.id_usuario,
         }).then(post => {
           res.redirect('/');
@@ -21,11 +20,14 @@ const posteosControllers = {
     },
 
     detallePost: async function  (req,res) {
-      const post = await db.posteos.findByPk(req.params.id,
-        { include: [
-          { association: 'comments', include: [{association: 'author'}]  }
-          ]}
-          )
+      const post = await db.posteos.findByPk(req.params.id,{
+          include: [
+          { association: 'author'},
+          { association: 'like'},
+          { association: 'comments', include: [{association: 'author'}] }
+          
+        ] }
+      )
 
       
           if (!post) {
@@ -47,7 +49,6 @@ const posteosControllers = {
       },
       update: function(req, res) {
         if (req.file) req.body.imagen = (req.file.destination + req.file.filename).replace('public', ''); 
-        req.params.updated_at = new Data();
         db.posteos.update(req.body, {where: {id_post: req.params.id} }).then(post =>{ 
           res.redirect('/');
         }).catch(error => {
@@ -77,6 +78,18 @@ const posteosControllers = {
           return res.send(error);
         })
       },
-      
+      like: function (req, res) {
+        if (!req.session.usuarios){
+          res.redirect('/posteo/'+req.params.id);
+        }
+        db.like.create ({
+          ID_USUARIO: req.session.usuarios.id,
+          ID_POST: req.params.id
+        }).then(like => {
+          res.redirect('/posteo'+req.params.id);
+        }).catch(error => {
+          return res.send(error);
+        })
+    },
 }
 module.exports = posteosControllers;
