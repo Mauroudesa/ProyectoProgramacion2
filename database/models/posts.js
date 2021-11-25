@@ -47,6 +47,11 @@ module.exports= (sequelize,dataTypes) => {
             as:'author', 
             foreignKey:'id_usuario_creo'
         });
-    };
+        posteos.hasMany(models.like,{
+            as:'likes', 
+            foreignKey:'ID_POST'
+        });
+    }
     return posteos;
 }
+
